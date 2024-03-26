@@ -1,0 +1,81 @@
+body{
+    font-family: "Plus Jakarta Sans", sans-serif;
+    /* display: flex;
+    flex-direction: column;
+    min-height: 100vh; */
+    min-height: 100vh;
+}
+
+/*styling footer */
+.f-info-links a{
+    text-decoration: none;
+    color:#222222;
+}
+
+.f-info-links a:hover{
+    text-decoration: underline;
+}
+.f-info-social i {
+    font-size: 1.2rem;
+    margin-left: 1.2rem;
+}
+.f-info{
+    height: 8rem;
+    padding: 2rem;
+    background-color: #ebebeb;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: space-evenly;
+    justify-content: center;
+
+}
+
+.f-info-links,
+.f-info-brands,
+.f-info-socials
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+/*add page */
+.full-height{
+    height: 100vh;
+
+}
+
+.full-height input{
+    padding: 0.8rem;
+    font-size: 18px;
+}
+
+.full-height label,.edit-input label {
+    font-size: 18px;
+}
+
+.full-height button{
+    background-color: #fe424d !important;
+    border: 0 !important;
+    padding: 10px;
+    width: 25%;
+ 
+}
+
+/*--navbar */
+.navbar i{
+    font-size: 2rem;
+    color:#fe424d !important;
+}
+
+/*-- inside table edit and delete button*/
+
+.delete{
+    color: #fe424d !important;
+}
+
+.edit{
+    color:green;
+}

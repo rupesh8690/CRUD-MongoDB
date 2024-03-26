@@ -1,0 +1,48 @@
+<% layout("layout/boilerplate.ejs") %>
+<div class="full-height">
+<div class="row mt-5 mb-4" >
+  <div class="col-8 offset-2">
+    <form action="/listing" method="post">
+        <h2>Create a new record</h2>
+        <br>
+      <div class="mb-4">
+        <label for="name">Enter name</label>
+        <input
+          type="text"
+          class="form-control"
+          name="listing[name]"
+          id=""
+          placeholder="Name"
+          required
+        />
+      </div>
+
+      <div class="mb-4">
+        <label for="address">Enter Address</label>
+        <input
+          type="text"
+          class="form-control"
+          name="listing[address]"
+          id=""
+          placeholder="Address"
+          required
+        />
+      </div>
+
+      <div class="mb-4">
+        <label for="phone">Enter phone</label>
+        <input
+          type="text"
+          class="form-control"
+          name="listing[phone]"
+          id=""
+          placeholder="Phone"
+          required
+        />
+      </div>
+
+      <button class="btn btn-primary">Add</button>
+    </form>
+  </div>
+</div>
+</div>

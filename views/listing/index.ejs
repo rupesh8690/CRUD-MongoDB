@@ -1,0 +1,36 @@
+<% layout("layout/boilerplate.ejs") %>
+<body>
+  
+  <div class="row mt-4">
+    <!-- <div class="col-8 offset-2 "> -->
+    <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Adress</th>
+            <th scope="col">Phone</th>
+            <th scope="col" colspan="2" >Operation</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% for(listing of allListing) { %> 
+          <tr>
+            
+            <td><%= listing.name %> </td>
+            <td><%= listing.address %></td>
+            <td><%= listing.phone %></td>
+            <td >
+              <a href="/listing/<%= listing.id %>/delete" class="delete"><i class="fa-solid fa-trash"></i></a>
+            </td>
+            <td> <a href="/listing/<%= listing.id %>/edit" class="edit"><i class="fa-solid fa-pen-to-square"></i></a></td>
+          </tr>
+          <% } %>
+            
+       
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  <!-- </div> -->
+
+</body>

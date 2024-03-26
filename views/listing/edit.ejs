@@ -1,0 +1,53 @@
+<% layout("layout/boilerplate.ejs") %>
+<body>
+  <div class="full-height">
+   
+    <div class="row mt-5">
+      <div class="col-8 offset-2">
+      
+        <form action="/listing/<%= result.id %>?_method=PUT" method="post">
+          <h3 >Edit your record</h3>
+          <br>
+        
+          <div class="mb-3">
+            <label for="name">Enter name</label>
+            <input
+              type="text"
+              class="form-control"
+              name="listing[name]"
+              id=""
+              placeholder="Name"
+              value="<%= result.name %>"
+            />
+          </div>
+
+          <div class="mb-3">
+            <label for="address">Enter Address</label>
+            <input
+              type="text"
+              class="form-control"
+              name="listing[address]"
+              id=""
+              placeholder="Address"
+              value="<%= result.address %>"
+            />
+          </div>
+
+          <div class="mb-3">
+            <label for="phone">Enter phone</label>
+            <input
+              type="text"
+              class="form-control"
+              name="listing[phone]"
+              id=""
+              placeholder="Phone"
+              value="<%= result.phone %>"
+            />
+          </div>
+
+          <button class="btn btn-primary">Edit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
